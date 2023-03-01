@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+:root{
+    --roxoBoreal: #4650BD;
+    --gradiente1: #304968;
+    --gradiente2: #36C1A0;
+    --gradiente3: #4650BD;
+    --fonteprincipal: 'Raleway', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fonteprincipal);
+}
+header{
+    background-color: var(--roxoBoreal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegacao{
+    color: #FFF;
+    text-decoration: none;
+}
