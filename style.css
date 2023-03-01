@@ -16,13 +16,60 @@
 body{
     font-family: var(--fonteprincipal);
 }
+
+/*Cabeçalho Desktop*/
 header{
     background-color: var(--roxoBoreal);
     display: flex;
-    justify-content: center;
+    flex-direction: row;   
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 128px;
+}
+.logo{
+    position: relative;
+    left: 20px;
+    
 }
 .navegacao{
     color: #FFF;
     text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+
+}
+.banner{
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+/*Telas de Tablets*/
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        
+    }
+    .logo{
+        text-align: center;
+    }
+    .navegacao{
+        margin: 0 20px;
+    }
+}
+
+/*Telas de Smartphone*/
+@media (max-width: 360px) {
+    .navegacao{
+        display: none;
+    }
+    .logo{
+        left: 0;
+    }
+    /* .menu{
+        display:contents ;
+    } */
+
 }
